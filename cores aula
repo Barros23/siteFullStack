@@ -1,0 +1,20 @@
+adcdef...
+
+binario 01
+
+numerico 0123456789
+
+hexadecimal 0123456789ABCDEF - mais possibilidades de mostrar coisas.
+
+RGB = Red Green Blue
+
+# _ _ _ _ _ _ / 2 para o vermelho
+				2 para o verde
+				2 para o azul
+
+	0 = Ausência de cor
+	F = Máximo de cor 
+
+#000000 - Preto (ausência de todas as cores)
+
+#FFFFFF - Branco (máximo de todas as cores)

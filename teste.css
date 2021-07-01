@@ -1,0 +1,16 @@
+body p:first-child {
+	font-size: 10vw;
+}
+
+
+body p:nth-child(2) {
+	font-size: 10vh;
+}
+
+body p:nth-child(3) {
+	font-size: 10vmin;
+}
+
+body p:last-child {
+	font-size: 10vmax;
+}

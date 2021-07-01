@@ -1,0 +1,428 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top:115px;
+	right:0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px; 
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight:bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;	/*essa forma de alinhamento só funciona pois a imagem esta dentro de um elemento "block-level" (como div) - neste caso, pq colocamos a propriedade display como inline-block!*/
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding:30px 20px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: green;
+	text-decoration: underline;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produtos li:hover .produto-descricao {
+	font-style: italic; 
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	padding-top:10px;
+}
+
+.produtos li:hover .produto-preco {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+
+
+footer {
+	background: url("bg.jpg"); 
+	text-align: center;
+	padding: 20px;
+	color: white;
+}
+
+.logobranco-rodape {
+	padding-bottom: 10px;
+}
+
+.texto-rodape {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+main {
+	
+}
+
+form {
+	width: 940px;
+	margin: 40px auto; 
+}
+
+.etiqueta {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.radiobox label{
+	font-size: 16px;
+}
+
+.input-padrao {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+
+}
+	/*estudo de força das marcações
+		p { força: 1 
+			color: blue;
+		}
+
+		form p { força: 1+1 
+			color: red;
+		}
+
+		.teste { força: 10 
+			color: green;
+		}
+
+		p.teste { força: 1 + 10
+			color: orange;
+		}
+
+		#teste1 { força: 100 
+			color: yellow;
+		}
+
+		inline - <p style="color:purple"> + forte que todos!
+	*/
+.select legend{
+	margin: 20px 0 10px 0;
+}
+
+.botaoenviar {
+	background: #D89D29;
+	border-radius: 5px;
+	width: 40%;
+	padding: 15px 0;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border-style: none;
+	transition: 0.5s background;
+	cursor: pointer;
+}
+
+.botaoenviar:hover {
+	background: #C78E18;
+}
+
+.botaoenviar:active {
+	border-style: inset;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 20px 0;
+}
+
+thead {
+	font-weight: bold;
+	color: white;
+	background: #999999;
+}
+
+
+/*css da página inicial*/
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em; /* " em" = medida proporcial p/ pixels - se o tamanho da fonte base for 10px, aqui será 20px. Se for 16px, será 32px.*/
+	margin: 1em 0;
+	font-weight: bold;
+	clear: left;
+}
+
+/*.titulo-principal:first-letter {
+	font-weight: bold;
+}
+.titulo-principal:before{
+	content:"[ ";
+}
+
+.titulo-principal:after{
+	content:" ]";
+}*/
+
+.utensilios {
+	width: calc(30% - 162px);
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p, .localizacao p {
+	margin: 1em 0;
+	font-size: 18px;
+}
+
+
+.principal .força {
+	font-weight: bold;
+}
+
+.missao {
+	font-style: italic;
+}
+
+.localizacao {
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.localizacao p{
+	text-align: center;
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa {
+	padding: 1em 0;
+	
+}
+
+.beneficios {
+	padding: 3em;
+	background: #888888;
+}
+
+.imgbeneficios {
+	width: 60%;
+	opacity: 0.8;
+	box-shadow: 10px 10px 5px;
+
+}
+
+.imgbeneficios:hover {
+	opacity: 1;
+	transition: 400ms;
+
+}
+
+.conteudo-beneficios{ 
+	width: 640px;
+	margin: 0 auto;
+ }
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.itens { /*da lista*/
+	line-height: 1.5;
+}
+
+.itens:before {
+	content: "\2605"
+}
+
+.itens:first-child {
+	font-weight:bold;
+}
+
+.itens:hover{
+	opacity: 0.8;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+/* SELETORES AVANÇADOS
+
+main > p {
+	background: red;
+}
+
+img + p {
+	background: blue;
+}
+
+img ~ p {
+	background: yellow;
+}
+
+.principal p:not(.missao){
+	background: orange;
+}*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	.logo, h1 {
+		text-align: center;
+		/*opacity: 0.15; ficaria legal tbm! */
+	}
+
+	nav {
+		position: static;
+	}
+
+	.principal {
+	 	padding:0.5em;
+	 }
+
+	.utensilios {
+		width: calc(30% - 12px);
+	}
+
+	.lista-beneficios, .imgbeneficios{
+		width: 100%;
+	}
+	
+	form {
+		width: auto;
+	}
+
+	.input-padrao {
+		margin: 0 auto 20px auto;
+		width: 65%;
+		padding: 10px 15px;
+	}
+
+	.etiqueta, legend, .select-caixa {
+		text-align: center;
+		width:auto;
+	}
+
+	.radiobox label {
+		margin: 0 1em;
+	}
+
+	.radiobox label:last-child {
+		margin-bottom: 1em;
+	}
+
+	.checkbox {
+		margin:20px 1em;
+	}
+
+	.botaoenviar {
+		margin: 1em 30%;
+	}
+
+	table{
+		margin: 20px auto;
+	}
+
+	.produtos {
+		width:100%;
+		padding: 8%;
+	}
+
+	.produtos li {
+		display: block;
+		width: auto;
+		padding: 5%;
+		margin: 1em auto;
+	}
+
+
+}

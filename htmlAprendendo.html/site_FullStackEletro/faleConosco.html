@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco - FullStack Eletro</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="box-header">
+            <h1><a href="index.html" target="_blank">FullStack Eletro</a></h1>
+            <!--As tags <h*> vão de 1 a 6! -->
+            <nav>
+                <ul>
+                    <li class="nav-list-item"><a href="produtos.html" target="_blank">Produtos</a></li>
+                    <li class="nav-list-item"><a href="nossaslojas.html" target="_blank">Lojas</a></li>
+                    <li class="nav-list-item"><a href="faleConosco.html" target="_blank">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Fim do menu-->
+    <main>
+        <div>
+            <h2>Fale Conosco</h2>
+            <table class="table-faleConosco">
+                <tr>
+                    <td class="td-contato" >
+                        <img src="./contato/emailicon.svg" alt="email">
+                        <p>contato@fullStackeletro.com</p>
+                    </td>
+                    <td class="td-contato">
+                        <img src="./contato/whatsappicon.svg" alt="whatsapp">
+                        <p>(11) 99999-9999</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <form>
+            <label>Nome e Sobrenome: <input class="input-padrao" type="name" placeholder="Seu Nome e sobrenome" autofocus required></label>
+            <label>Email: <input class="input-padrao" type="email" placeholder="seu_email@dominio.com" required></label>
+            <label>Telefone: <input class="input-padrao" type="tel" placeholder="(XX) XXXXX-XXXX" required></label>
+            
+            
+            <label>O que deseja falar conosco?<textarea class="input-padrao" cols="30" rols="20"></textarea></label>
+            
+            <div>
+            <p>Como você deseja ser contactado?</p>
+                <input type="radio" name="meioContato" id="whatsapp" value="whatsapp"><label class="label-radio-meioContato" for="whatsapp">Whatsapp</label>
+                <input type="radio" name="meioContato" id="email" value="email"><label class="label-radio-meioContato" for="email">Email</label>
+                <input type="radio" name="meioContato" id="telefone" value="telefone"><label class="label-radio-meioContato" for="telefone">Telefone</label>
+            </div>
+            <fieldset>
+                <legend>Deseja receber nossas promoções por email?</legend>
+                <label class="label-checkbox-novidadesEmail" for="novidadesEmail"><input class="form-checkbox" type="checkbox" name="novidadesEmail">Ao confirmar aceito o envio, pelo site FullStack Eletro, de promoções e novidades para o email informado.</label>
+            </fieldset>
+
+            <button class="button-submit" type="submit" value="Enviar" onclick="document.write('Olá')">
+        
+        
+        </form>
+    </main>
+    
+    <footer>
+        <div class="box-payment">
+            <p class="p-formasPagamento">Formas de Pagamento</p>
+            <img src="./Formasdepagamento.png" class="img-payment" alt="Aceitamos bandeira Visa, Mastercard, Elo, Hypercard e Multibanco">
+            
+        </div>
+        <p>&#169;Recode Pro</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

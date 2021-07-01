@@ -1,0 +1,54 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 115px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+
+
+footer{
+	background: url("bg.jpg");
+	text-align: center;
+	padding: 10px;
+}
+
+.logo-branco {
+	padding-bottom: 
+}
+
+.texto-rodape {
+	font-size: 13px;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}

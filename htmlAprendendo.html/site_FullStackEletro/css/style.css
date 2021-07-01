@@ -1,0 +1,314 @@
+body,  main, footer {
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+header{
+    padding: 20px 0;
+    background: brown;
+    vertical-align: baseline;
+}
+
+.box-header{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.box-header nav{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    
+}
+header h1, h1 a{
+    display: inline-block;
+    
+}
+
+
+nav ul{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    
+}
+
+.nav-list-item{
+    display: inline;
+    margin: 0 0 0 15px;
+    width: 25%;
+}
+
+header a, h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: snow;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav-list-item a:hover{
+    text-decoration: underline;
+}
+
+h2{
+    margin-left: 1%;
+    padding-bottom: 1em;
+    border-bottom: 2px solid darkgrey;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: baseline;    
+}
+
+.forca{
+    font-weight: bold;
+}
+
+/*produtos*/
+
+.caixa-produtos-categorias{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+.categories{
+    display: inline-block;
+    padding-inline-start: 1%;
+    position: fixed;
+    border-right: 2px solid darkgray;    
+}
+.categories ul{
+    padding-left: 5%;
+    list-style: none;
+    text-align: left;
+}
+
+.categories li{
+    padding-top: 2%;
+}
+
+.categories li:hover{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.categories li::before {
+    margin-right: 2%;
+    content: "\2022";
+    opacity: 0.8;
+}
+
+
+.products{
+    display: block;
+    margin:1%;
+    padding-inline-start: 10%;
+        
+}
+
+.div-products{
+    display: inline-block;
+    width: 20%;
+    text-align:center;
+    padding: 5px;
+    margin-left: 5%;
+}
+
+
+.div-products:hover .new-price{
+    text-decoration: underline;
+    color: red;
+    font-size: 17px;
+}
+
+.div-products img{
+    width:120px;
+    padding: 1%;
+}
+
+.div-products .old-price{
+    text-decoration: line-through;
+    box-sizing: border-box;
+    padding-top:5%;
+    border-top: 1px solid grey;
+}
+
+.div-products .new-price{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+footer{
+    margin: 5% 0 0 0;
+    background: lightgray;
+}
+
+footer p {
+    opacity: 0.8;
+    padding: 1%;
+    text-align: center;
+}
+
+.box-payment{
+    text-align: center;
+}
+
+.img-payment {
+    width: 20%;
+}
+
+
+
+/*Nossas Lojas*/
+
+
+.box-lojas {
+    width: 100%;
+}
+
+.box-lojas li {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+}
+
+
+/*fale conosco*/
+.table-faleConosco{
+    width:100%;
+    padding:5px;
+}
+
+.td-contato{
+    width:50%;
+    text-align: center;
+}
+
+.td-contato img{
+    width: 5%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.td-contato p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+form{
+    margin: 40px 20%;
+}
+
+form label, form p {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+form .input-padrao{
+    display: block;
+    margin: 10px 0 20px 0;
+    padding:10px 25px;
+    width: 50%;
+    border: 1px inset rgb(143, 139, 139);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: montserrat;
+}
+
+.label-radio-meioContato{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: initial;
+    margin: 0 0 1.5em 0;
+    padding: 0 8px 0 2px;
+}
+
+.label-checkbox-novidadesEmail{
+    font-weight: initial;
+    font-size: 14px;
+}
+
+
+.button-submit{
+    margin: 1em;
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    background: brown;
+    color: snow;
+    font-family: montserrat;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*other devices*/
+
+@media screen and (max-width:940px) {
+    .box-header{
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    header h1 {
+        text-align: center;
+        display: block;
+    }
+
+    .box-header nav {
+        position:static;
+        text-align: center;
+    }
+
+    .box-header ul {
+        padding-inline-start: 0;
+    }
+
+
+    .categories{
+        position: relative;
+        display: block;
+        border: none;
+        text-align: center;
+    }
+
+    .categories ul {
+        display: inline-block;
+        margin: 1em auto;
+    }
+
+    .categories li{
+        margin-top: 2%;
+    }
+
+    .products{
+        padding-inline-start: 0;
+        text-align: center;
+    }
+
+    .div-products{
+        width: auto;
+        margin: 1%;
+        border: 1px solid lightslategrey;
+    }
+
+    .div-products .old-price{
+        border-top: 1px solid white;
+    }
+}

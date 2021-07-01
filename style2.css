@@ -1,0 +1,378 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top:115px;
+	right:0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover{ /*quando mouse passa por cima*/
+	border-color: #C78C19;
+}
+
+.produtos li:active{ /* quando esta sendo clicado*/
+	border-color: #088C19;
+	text-decoration: underline; 
+}
+
+.produtos li:hover h2{ /*precimos especificar a mudança pois antes tbm especificamos o tamanho*/
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produtos-descricao {
+	font-size: 18px;
+}
+
+.produtos li:hover .produtos-descricao { /*como acima, precisamos especificar a mudança! neste caso fazemos com a classe que criamos!*/
+	font-size: 20px;
+}
+
+.produtos-preco {
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.produtos li:hover .produtos-preco {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+main {
+	
+}
+
+form {
+	width: 940px;
+	margin: 40px auto;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.radiobox label {
+	font-size: 16px;
+}
+
+.input-padrao {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	width: 50%;
+	font-size: 15px;
+}
+
+::placeholder { /*usamos o :: para selecionar o atributo "enquanto"! aqui, selecionamos os placeholder's para deixarmos em italico!;*/
+	font-style: italic;
+}
+
+.select legend {
+	margin-top: 20px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.botao-enviar {
+	background: #D89D29;
+	border-radius: 5px;
+	width: 40%;
+	padding: 15px 0;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border-style: none;
+	transition: 0.5s background;
+	cursor: pointer;
+	display: inline-block;
+
+}
+
+.botao-enviar:hover {
+	background: #C78E18;
+}
+
+.botao-enviar:active {
+	border-style: inset;
+	transform: scale(1.05) /*rotate(360deg)*/;
+}
+
+footer {
+	background: url("bg.jpg");
+	padding: 20px 0;
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+
+}
+
+.texto-rodape {
+	color: #FFFFFF;
+	font-size: 13px;
+	
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 20px auto;
+	width: calc(50% - 20px);
+}
+
+thead {
+	background: #AAAAAA;
+	color: white;
+	font-weight: bold;
+}
+
+/*css pagina principal*/
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	font-size: 2em;
+	margin: 1em 0;
+	text-align: center;
+	font-weight: bold;
+	clear: left;
+	/*text-shadow: 2px 2px 1px blue;*/
+}
+
+.utensilios {
+	width: calc(30% - 162px);
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.principal {
+	width: 940px;
+	margin: 0 auto;
+	background: #FEFEFE;
+	padding: 3em 0;
+}
+
+.principal p, .localizacao p {
+	margin: 1em 0;
+	font-size: 18px;
+}
+
+.localizacao p {
+	text-align: center;
+}
+
+.localizacao {
+	background: linear-gradient(#FEFEFE, #888888);
+
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa {
+	padding: 1em 0;
+}
+
+.principal .força {
+	font-weight: bold;
+}
+
+.principal .missao {
+	font-style: italic;
+}
+
+.beneficios{
+	background: #888888;
+	padding: 3em;
+	/*box-shadow: inset 0 0 30px blue;*/
+}
+
+.beneficios-conteudo{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lista-beneficios:first-line{
+	font-weight: bold;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:before{
+	content: "\2605";
+}
+
+.itens:hover {
+	opacity: 0.8;
+}
+
+.imgbeneficios {
+	width: 60%;
+	opacity: 80%;
+	box-shadow: 10px 10px 5px ; /*, -10px -10px 30px yellow;*/
+}
+
+.imgbeneficios:hover {
+	opacity: 1;
+	transition: 400ms;
+	tex
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+@media screen and (max-width:480px){
+	.caixa, .principal, .mapa-conteudo, .beneficios-conteudo, .video {
+	 	width:100%;
+	 }
+
+	 .principal {
+	 	padding:0.4em;
+	 }
+
+	 .logo, h1 {
+	 	text-align: center;
+	 }
+
+	 nav {
+	 	position: static;
+	 }
+
+	 .utensilios {
+		width: calc(30% - 12px);
+	}
+
+	.lista-beneficios, .imgbeneficios{
+		width: 100%;
+	}
+
+	/*PRODUTOS*/
+
+	.produtos{
+		width: 100%;
+	}
+
+	.produtos li {
+		display: block;
+		width: auto;
+		margin: 1em;
+		padding: 5%;
+	}
+
+	.produtos li img {
+		transform: scale(0.8);
+		display: inline-block;
+
+	}
+
+	/*CONTATO*/
+
+	form {
+		width:auto;
+	}
+
+	form label:not(.radiobox label, .checkbox), form legend {
+		text-align: center;
+	}
+
+	.input-padrao {
+		width: 65%;
+		margin: 0 auto 20px auto;
+
+	}
+
+	.radiobox label {
+		padding-left: 1em;
+	}
+
+	.radiobox label:last-child{
+		padding-bottom: 1em;
+	}
+
+	.caixa-select {
+		text-align: center;
+	}
+
+	.checkbox {
+		margin: 20px 1em;
+	}
+
+
+	.botao-enviar {
+		margin: 1em 30%;
+	}
+
+
+}

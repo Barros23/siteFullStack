@@ -1,0 +1,7 @@
+<!--Vamos Praticar!
+-Tags
+-Estrutura Básica
+-Cabeçalho e corpo
+-Títulos e Parágrafos
+-Extra: destacando o texto com negrito e itálico
+-->

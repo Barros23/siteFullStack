@@ -1,0 +1,38 @@
+adcdef...
+
+binario 01
+
+numerico 0123456789
+
+hexadecimal 0123456789ABCDEF - mais possibilidades de mostrar coisas.
+
+	RGB = Red Green Blue
+
+	# _ _ _ _ _ _ / 2 para o vermelho
+					2 para o verde
+					2 para o azul
+
+		0 = Ausência de cor
+		F = Máximo de cor 
+
+	#000000 - Preto (ausência de todas as cores)
+
+	#FFFFFF - Branco (máximo de todas as cores)
+
+CORES:
+
+RED
+BLUE
+YELLOW
+
+HEXADECIMAL
+
+RGB 
+	0,1,2,3,...255 - 256 Niveis de representação pra cada cor
+
+	0 = ausencia
+	255 = máximo
+
+	representação> rgb((vermelho), (verde), (azul))
+				   rgb (255,255,255) - branco
+				   rgb (0,0,255) - azul
